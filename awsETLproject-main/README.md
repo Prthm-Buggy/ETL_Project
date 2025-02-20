@@ -30,36 +30,36 @@ create another S3 'intermediate' bucket for our data. This will be the midpoint 
  ![image](https://github.com/user-attachments/assets/0bdc787d-13b8-489e-854d-cad2173d695d)
 
 
-
-We create another S3 'intermediate' bucket for our data. This will be the midpoint for our data. We can add security checks on our data here.
-
-![Screenshot 2024-11-16 215408](https://github.com/user-attachments/assets/e42db1a4-028b-4f37-8def-c29e962c5d61)
-
   
 A Lambda Function Trigger is created for the intermediate bucket.
 An AWS Lambda function is triggered whenever new data lands in the S3 bucket. This function processes the raw data and transfers it to an intermediate bucket. The intermediate bucket holds pre-processed data, ready for further transformations or validations.
 
-![Screenshot 2024-11-16 215332](https://github.com/user-attachments/assets/7aedafe8-f0ec-4425-a31d-1dc9389d0fb2)
+![image](https://github.com/user-attachments/assets/0526f91a-20b5-4e4e-bb9d-0e8fc838f704)
+
 
 
 The final s3 bucket is created which holds the cleaned, and formatted data, which is now ready for loading into the target database.
 
-![Screenshot 2024-11-16 215404](https://github.com/user-attachments/assets/c69e2f00-f69b-4e9f-9df3-656973e68ad1)
+![image](https://github.com/user-attachments/assets/6ebb7a7e-cc29-4928-8746-2ff202e5a56d)
+
 
 We create a lambda trigger which takes the data from the intermediate bucket, performs any necessary transformations, and loads the cleaned data into the "transformed data" S3 bucket. We use the pandas library to clean and transform data
 
-![Screenshot 2024-11-16 215340](https://github.com/user-attachments/assets/7a59bde9-5210-4eda-9d78-f92d44a61364)
+![image](https://github.com/user-attachments/assets/440292b5-2f25-4218-808f-e978535b780b)
+
 
 The transformed data from the final cleaned bucket is then loaded into Amazon Redshift, which acts as the data warehouse. Redshift ensures efficient querying and analysis of the processed data. We create a redshift cluster of the node type 'dc2.large' having number of nodes as 1.
 
 
 ![Screenshot 2024-11-16 193807](https://github.com/user-attachments/assets/f2250eae-1e0f-4f21-bbce-a85c4ac5e384)
 
-![Screenshot 2024-11-16 214642](https://github.com/user-attachments/assets/728c8b1b-1959-4247-bed0-a3867d2983c4)
+![image](https://github.com/user-attachments/assets/4d47dd85-a8d2-4db5-8076-4b5e24eed735)
+
 
 We write an sql query in redshift to get the Data.
 
-![Screenshot 2024-11-16 214622](https://github.com/user-attachments/assets/673d0f5e-f8e1-40dc-8be2-242ef8ffb158)
+![Uploading image.png…]()
+
 
 Finally, Amazon QuickSight is used to create dashboards and visualizations, enabling stakeholders to gain insights from the data.
 ![Screenshot 2024-11-16 214119](https://github.com/user-attachments/assets/5fb9be1f-9c60-4cba-adc7-a63b8635c087)
@@ -68,7 +68,7 @@ Finally, Amazon QuickSight is used to create dashboards and visualizations, enab
 
 ![Screenshot 2024-11-16 214536](https://github.com/user-attachments/assets/b104f6dc-cd23-4c33-b997-0639ff29ddf7)
 
-![Screenshot 2024-11-16 214422](https://github.com/user-attachments/assets/048b1042-9c05-481d-a234-50a6f9c2d0f8)
+![image](https://github.com/user-attachments/assets/70887be3-1122-47f1-80a9-e7c796751648)
 
 
 
