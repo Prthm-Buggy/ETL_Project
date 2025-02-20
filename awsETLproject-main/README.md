@@ -24,7 +24,7 @@ Data is fetched from Zillow's API using the script analytics.py. This script is 
 
 We create a landing S3 bucket for the extracted data. The "landing" Amazon S3 bucket, serves as the first checkpoint for raw data.
 
-  ![Screenshot 2024-11-16 215413](https://github.com/user-attachments/assets/47b09143-fc4c-4986-b384-d75025c6f5d4)
+ ![image](https://github.com/user-attachments/assets/0bdc787d-13b8-489e-854d-cad2173d695d)
 
 
 
