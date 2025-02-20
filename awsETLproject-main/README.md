@@ -57,13 +57,13 @@ The transformed data from the final cleaned bucket is then loaded into Amazon Re
 
 We write an sql query in redshift to get the Data.
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/708354fb-9e67-4ea9-a3db-7b6f4e3d4b2a)
 
 
 Finally, Amazon QuickSight is used to create dashboards and visualizations, enabling stakeholders to gain insights from the data.
-![Screenshot 2024-11-16 214119](https://github.com/user-attachments/assets/5fb9be1f-9c60-4cba-adc7-a63b8635c087)
+![image](https://github.com/user-attachments/assets/2b3a3db9-9dd3-4864-97fd-5c552e54951e)
 
-![Screenshot 2024-11-16 214156](https://github.com/user-attachments/assets/6e65acc0-e31e-4613-a81c-18fba0467840)
+![Uploading image.png…]()
 
 ![Screenshot 2024-11-16 214536](https://github.com/user-attachments/assets/b104f6dc-cd23-4c33-b997-0639ff29ddf7)
 
