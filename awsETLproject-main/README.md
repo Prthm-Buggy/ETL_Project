@@ -65,8 +65,6 @@ Finally, Amazon QuickSight is used to create dashboards and visualizations, enab
 
 ![Uploading image.png…]()
 
-![Screenshot 2024-11-16 214536](https://github.com/user-attachments/assets/b104f6dc-cd23-4c33-b997-0639ff29ddf7)
-
 ![image](https://github.com/user-attachments/assets/70887be3-1122-47f1-80a9-e7c796751648)
 
 
