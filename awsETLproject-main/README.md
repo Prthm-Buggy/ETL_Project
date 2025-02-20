@@ -51,7 +51,6 @@ We create a lambda trigger which takes the data from the intermediate bucket, pe
 The transformed data from the final cleaned bucket is then loaded into Amazon Redshift, which acts as the data warehouse. Redshift ensures efficient querying and analysis of the processed data. We create a redshift cluster of the node type 'dc2.large' having number of nodes as 1.
 
 
-![Screenshot 2024-11-16 193807](https://github.com/user-attachments/assets/f2250eae-1e0f-4f21-bbce-a85c4ac5e384)
 
 ![image](https://github.com/user-attachments/assets/4d47dd85-a8d2-4db5-8076-4b5e24eed735)
 
