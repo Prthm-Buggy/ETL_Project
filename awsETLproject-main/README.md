@@ -8,15 +8,17 @@ This project integrates Zillow's data through RapidAPI to streamline the ETL (Ex
 
 First of all, we initialize our EC2 instance so that can run apache airflow on it. This will help us with our automation and orchestrating the workflows. It ensures each step in the pipeline runs smoothly and handles dependencies, retries, and scheduling. We will create a DAG(Directed acyclic graphs) to make the process efficient  
 
-![Screenshot (160)](https://github.com/user-attachments/assets/ad9eed3e-bb50-4724-b15a-9d27f1cfda75)
+![image](https://github.com/user-attachments/assets/f20e451d-2b1e-4077-9420-c5d8731335ef)
 
 
-![Screenshot 2024-11-16 214818](https://github.com/user-attachments/assets/a471ef66-d518-43d9-bf39-29542fb1ca63)
+
+![image](https://github.com/user-attachments/assets/94e6b18b-f9ef-46d7-8274-7795f899cf41)
+
 
 
 Data is fetched from Zillow's API using the script analytics.py. This script is responsible for collecting the required information and preparing it for further processing. The data is collected in a csv format.
    
- ![Screenshot 2024-11-16 215145](https://github.com/user-attachments/assets/4d8fb853-015c-49d7-bd81-89883a695200)
+![image](https://github.com/user-attachments/assets/9dbab9f4-30aa-492e-aa4b-59072a277717)
 
 
 
